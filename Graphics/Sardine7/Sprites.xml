@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sprites>
+
+    <sokobanblock_face path="objects/Sardine7/SokobanBlock/" start="idle">
+		<Center/>
+        <Loop id="idle" path="idle_face" delay="0.08"/>
+        <Anim id="hurt" path="hurt" frames="3-12" delay="0.08" goto="idle"/>
+        <Anim id="hit" path="hit" delay="0.08"/>
+        <Loop id="left" path="hit_left" delay="0.08"/>
+        <Loop id="right" path="hit_right" delay="0.08"/>
+        <Loop id="up" path="hit_up" delay="0.08"/> 
+        <Loop id="down" path="hit_down" delay="0.08"/>
+	</sokobanblock_face>
+
+    <giant_sokobanblock_face path="objects/Sardine7/SokobanBlock/" start="idle">
+        <Center/>
+        <Loop id="idle" path="giant_block" frames="0" delay="0.08"/>
+        <Anim id="hurt"  path="giant_block" frames="8-12" delay="0.08" goto="idle"/>
+        <Anim id="hit" path="giant_block" frames="0-5" delay="0.08"/>
+        <Loop id="right" path="giant_block" frames="6,7"  delay="0.08"/>
+    </giant_sokobanblock_face>
+	
+	<gokuro_boss path="characters/Sardine7/Gokuro/" start="idle">
+		<Justify x=".5" y=".5" />
+		<Anim id="respawn" path="boss" delay="0.06" frames="0-12" goto="idle"/>
+
+		<Loop id="idle" path="boss" delay="0.09" frames="13-20" />
+		<Anim id="charge" path="boss" delay="0.08" frames="21-33"  goto="dash"/>
+		<Loop id="dash" path="boss" delay="0.06" frames="34-37"/>
+		<Anim id="hurt" path="boss" delay="0.04" frames="68-72"/>
+	</gokuro_boss>
+	
+	<humble_lookout path="objects/Sardine7/HumbleLookout/" start="idle">
+		<Justify x=".5" y="1" />
+		
+		<Loop id="idle" path="lookout" delay="0.1" frames="5"/>
+		<Anim id="lookRight" path="lookout" delay="0.08" frames="0-4" goto="looking"/>
+		<Anim id="lookLeft" path="lookout" delay="0.08" frames="14-16,3,4" goto="looking"/>
+		<Loop id="looking" path="lookout" delay="0.08" frames="4"/>
+		<Loop id="lookingUp" path="lookout" frames="6"/>
+		<Loop id="lookingUpRight" path="lookout" frames="7"/>
+		<Loop id="lookingRight" path="lookout" frames="8"/>
+		<Loop id="lookingDownRight" path="lookout" frames="9"/>
+		<Loop id="lookingDown" path="lookout" frames="10"/>
+		<Loop id="lookingDownLeft" path="lookout" frames="11"/>
+		<Loop id="lookingLeft" path="lookout" frames="12"/>
+		<Loop id="lookingUpLeft" path="lookout" frames="13"/>
+
+		<Loop id="badeline_idle" path="badeline" delay="0.1" frames="5"/>
+		<Anim id="badeline_lookRight" path="badeline" delay="0.08" frames="0-4" goto="badeline_looking"/>
+		<Anim id="badeline_lookLeft" path="badeline" delay="0.08" frames="14-16,3,4" goto="badeline_looking"/>
+		<Loop id="badeline_looking" path="badeline" delay="0.08" frames="4"/>
+		<Loop id="badeline_lookingUp" path="badeline" frames="6"/>
+		<Loop id="badeline_lookingUpRight" path="badeline" frames="7"/>
+		<Loop id="badeline_lookingRight" path="badeline" frames="8"/>
+		<Loop id="badeline_lookingDownRight" path="badeline" frames="9"/>
+		<Loop id="badeline_lookingDown" path="badeline" frames="10"/>
+		<Loop id="badeline_lookingDownLeft" path="badeline" frames="11"/>
+		<Loop id="badeline_lookingLeft" path="badeline" frames="12"/>
+		<Loop id="badeline_lookingUpLeft" path="badeline" frames="13"/>
+
+		<Loop id="nobackpack_idle" path="nobackpack" delay="0.1" frames="5"/>
+		<Anim id="nobackpack_lookRight" path="nobackpack" delay="0.08" frames="0-4" goto="nobackpack_looking"/>
+		<Anim id="nobackpack_lookLeft" path="nobackpack" delay="0.08" frames="14-16,3,4" goto="nobackpack_looking"/>
+		<Loop id="nobackpack_looking" path="nobackpack" delay="0.08" frames="4"/>
+		<Loop id="nobackpack_lookingUp" path="nobackpack" frames="6"/>
+		<Loop id="nobackpack_lookingUpRight" path="nobackpack" frames="7"/>
+		<Loop id="nobackpack_lookingRight" path="nobackpack" frames="8"/>
+		<Loop id="nobackpack_lookingDownRight" path="nobackpack" frames="9"/>
+		<Loop id="nobackpack_lookingDown" path="nobackpack" frames="10"/>
+		<Loop id="nobackpack_lookingDownLeft" path="nobackpack" frames="11"/>
+		<Loop id="nobackpack_lookingLeft" path="nobackpack" frames="12"/>
+		<Loop id="nobackpack_lookingUpLeft" path="nobackpack" frames="13"/>
+    </humble_lookout>
+	
+	<bunny path="scenery/Sardine7/bunny/" start="idle">
+		<Justify x="0.5" y="1"/>
+		<Loop id="idle" path="idle" delay="0.1" frames="0"/>
+		<Loop id="jump" path="jump" delay="0.2" frames="0,1"/>
+		<Loop id="hide" path="idle" delay="0.1" frames="1" goto="hidden"/>
+		<Loop id="hidden" path="idle" delay="0.1" frames="2"/>
+		<Loop id="show" path="idle" delay="0.1" frames="1,0" goto="idle"/>
+  </bunny>
+  
+  
+</Sprites>
