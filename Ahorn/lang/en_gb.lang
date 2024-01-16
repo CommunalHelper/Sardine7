@@ -1,62 +1,19 @@
+# -- Entities --
+# ChainMover
+placements.entities.Sardine7/ChainMover.tooltips.theme=The visual theme of the chain mover.
+placements.entities.Sardine7/ChainMover.tooltips.largerMoonBorder=Whether to enlarge the border of a moon-themed chain mover so that normal spikes don't look weird on it.
+
 # HumbleLookout
 placements.entities.Sardine7/HumbleLookout.tooltips.attractive=Whether it flashes.
-placements.entities.Sardine7/HumbleLookout.tooltips.talkative=Whether it has a big floating mouth over its head.
+placements.entities.Sardine7/HumbleLookout.tooltips.talkative=Whether it has an interaction indicator floating above it.
 placements.entities.Sardine7/HumbleLookout.tooltips.summit=Whether the watch tower should zoom on the final node or not. Requires nodes to function, otherwise game will crash.
 placements.entities.Sardine7/HumbleLookout.tooltips.onlyY=Whether the watch tower can only move vertically. If the watch tower has nodes it will still follow them.
 
-# SokobanBlock
-
-# Beeker
-
 # LightSource
 placements.entities.Sardine7/LightSource.tooltips.alpha=Opacity of the light.
-placements.entities.Sardine7/LightSource.tooltips.radius=Radius of the light.
 placements.entities.Sardine7/LightSource.tooltips.startFade=Where the light begins to fade out (distance away from light source)
 placements.entities.Sardine7/LightSource.tooltips.endFade=Where the light finishes fading out (distance away from light source)
 placements.entities.Sardine7/LightSource.tooltips.color=The color of the light. Accepts both hex codes and XNA color names.
-
-# AmbienceTrigger
-placements.triggers.Sardine7/AmbienceTrigger.tooltips.resetOnLeave=Resets the ambience when the player leaves the current zone after entering the trigger zone.
-placements.triggers.Sardine7/AmbienceTrigger.tooltips.track=Changes the ambience event that plays when the player enters the trigger zone.
-
-# ChainMover
-placements.entities.Sardine7/ChainMover.tooltips.largerMoonBorder=Enlarge the border of a moon-themed zip mover so that normal spikes don't look weird on it.
-
-# GokuroSpawnTrigger
-placements.triggers.Sardine7/GokuroSpawnTrigger.tooltips.chaseWaitTime=Cooldown time(s) between attacks. Gokuro's actual cooldown time will be iterated through this list and when the list bottoms out, he returns to the start. Setting this too low will lead to Gokuro attacking before his hitbox movement is over, resulting in incorrect hitbox position.
-placements.triggers.Sardine7/GokuroSpawnTrigger.tooltips.bouncy=Whether the player can bouncc on him.
-placements.triggers.Sardine7/GokuroSpawnTrigger.tooltips.yApproachDuringRespawn=Whether Gokuro moves on y-axis during respawn. Set this to true if Gokuro has a high yApproachSpped for more natural animations.
-placements.triggers.Sardine7/GokuroSpawnTrigger.tooltips.yApproachSpeed=How fast Gokuro moves on y-axis.
-placements.triggers.Sardine7/GokuroSpawnTrigger.tooltips.dieFast=Whether Gokuro dies at the bottom of the camera boundary or the room boundary. Setting this to true is a must for tall rooms.
-placements.triggers.Sardine7/GokuroSpawnTrigger.tooltips.attackMaxSpeed=Maximum attack speed.
-placements.triggers.Sardine7/GokuroSpawnTrigger.tooltips.chronosBarrier=When Gokuro accelerates past this speed he starts controlling time.
-placements.triggers.Sardine7/GokuroSpawnTrigger.tooltips.luigi=Yes
-placements.triggers.Sardine7/GokuroSpawnTrigger.tooltips.extraApproach=Whether Gokuro approaches you when charging up.
-placements.triggers.Sardine7/GokuroSpawnTrigger.tooltips.yPosition=Where Gokuro spawns on y-axis, set this to -1 for default behaviour.
-placements.triggers.Sardine7/GokuroSpawnTrigger.tooltips.volume=The volume of all Gokuro sounds except the bopping sound.
-placements.triggers.Sardine7/GokuroSpawnTrigger.tooltips.attackCount=The number of times Gokuro can attack before leaving. Enter a negative value for infinite attacks.
-
-# GokuroLeaveTrigger
-placements.triggers.Sardine7/GokuroLeaveTrigger.tooltips.count=The number of Gokuros that this meat grinder disposes of.
-
-# DashCodeTrigger
-placements.triggers.Sardine7/DashCodeTrigger.tooltips.code=The dash code. U is Up, D is Down, L is Left, R is Right. U and D come before L and R.
-placements.triggers.Sardine7/DashCodeTrigger.tooltips.flag=The flag that this trigger sets upon activation.
-placements.triggers.Sardine7/DashCodeTrigger.tooltips.flagValue=The value that the flag is set to.
-placements.triggers.Sardine7/DashCodeTrigger.tooltips.resetOnLeave=Whether all previous inputs are reset upon leaving the trigger.
-placements.triggers.Sardine7/DashCodeTrigger.tooltips.disableOnLeave=Whether new inputs aren't registered after leaving the trigger.
-
-# SwitchMover
-placements.entities.Sardine7/SwitchMover.tooltips.pathDepth=The depths of its path, that is, cogs and ropes and stuff.
-placements.entities.Sardine7/SwitchMover.tooltips.pathVisible=The visibility of its path.
-
-# SmoothieCameraTargetTrigger
-placements.triggers.Sardine7/SmoothieCameraTargetTrigger.tooltips.positionMode=Determines which direction the camera position moves in.
-placements.triggers.Sardine7/SmoothieCameraTargetTrigger.tooltips.yOnly=The camera will only lock on the Y axis.
-placements.triggers.Sardine7/SmoothieCameraTargetTrigger.tooltips.xOnly=The camera will only lock on the X axis.
-placements.triggers.Sardine7/SmoothieCameraTargetTrigger.tooltips.yLerpStrength=Determines how fast the camera moves to lock into place upon activation on the Y axis.
-placements.triggers.Sardine7/SmoothieCameraTargetTrigger.tooltips.xLerpStrength=Determines how fast the camera moves to lock into place upon activation on the X axis.
-placements.triggers.Sardine7/SmoothieCameraTargetTrigger.tooltips.deleteFlag=Session flag to deactivate the trigger, ignored if left empty. Camera will not reset if player is inside the trigger as it deactivates.\nIf the player transitions into the room with the flag set, the trigger can not be reactivated. However, if it was enabled and then disabled in the room, the player can reactivate it.
 
 # SturdyFakeWall
 placements.entities.Sardine7/SturdyFakeWall.tooltips.tiletype=Changes the visual appearance of the wall.
@@ -66,6 +23,40 @@ placements.entities.Sardine7/SturdyFakeWall.tooltips.permanent=Will stay uncover
 placements.entities.Sardine7/SturdyFakeWall.tooltips.blendin=Blends the block with the walls it touches, making it less apparent.
 placements.entities.Sardine7/SturdyFakeWall.tooltips.revealSound=The sound that plays when the block is revealed.
 
+# SwitchMover
+placements.entities.Sardine7/SwitchMover.tooltips.theme=The visual theme of the switch mover.
+placements.entities.Sardine7/SwitchMover.tooltips.flag=The name of the flag that activates the switch mover.
+placements.entities.Sardine7/SwitchMover.tooltips.pathDepth=The depth of the switch mover path.
+placements.entities.Sardine7/SwitchMover.tooltips.pathVisible=The visibility of the switch mover path.
+
+# -- Triggers --
+# DashCodeTrigger
+placements.triggers.Sardine7/DashCodeTrigger.tooltips.code=The dash code as a comma-separated list of directions. U is Up, D is Down, L is Left, R is Right. U and D come before L and R.
+placements.triggers.Sardine7/DashCodeTrigger.tooltips.flag=The flag that this trigger sets upon activation.
+placements.triggers.Sardine7/DashCodeTrigger.tooltips.flagValue=The value that the flag is set to.
+placements.triggers.Sardine7/DashCodeTrigger.tooltips.resetOnLeave=Whether all previous inputs are reset upon leaving the trigger.
+placements.triggers.Sardine7/DashCodeTrigger.tooltips.disableOnLeave=Whether new inputs are ignored fter leaving the trigger.
+
+# GokuroLeaveTrigger
+placements.triggers.Sardine7/GokuroLeaveTrigger.tooltips.count=The number of Gokuros that this meat grinder disposes of.
+
+# GokuroNormalizeTrigger
+placements.triggers.Sardine7/GokuroNormalizeTrigger.tooltips.count=The number of Gokuros that are made unable to control time rate.
+
+# GokuroSpawnTrigger
+placements.triggers.Sardine7/GokuroSpawnTrigger.tooltips.chaseWaitTimes=Cooldown time(s) between attacks in seconds, as a comma-separated list. Setting this too low will lead to Gokuro attacking before his hitbox movement is over, resulting in incorrect hitbox position.
+placements.triggers.Sardine7/GokuroSpawnTrigger.tooltips.bouncy=Whether the player can bounce on him.
+placements.triggers.Sardine7/GokuroSpawnTrigger.tooltips.yApproachDuringRespawn=Whether Gokuro moves on the y-axis during respawn. Set this to true if Gokuro has a high yApproachSpped for more natural animations.
+placements.triggers.Sardine7/GokuroSpawnTrigger.tooltips.yApproachSpeed=How fast Gokuro moves on the y-axis.
+placements.triggers.Sardine7/GokuroSpawnTrigger.tooltips.dieFast=Whether Gokuro dies at the bottom of the camera boundary or the room boundary. Setting this to true is a must for tall rooms.
+placements.triggers.Sardine7/GokuroSpawnTrigger.tooltips.attackMaxSpeed=Maximum attack speed.
+placements.triggers.Sardine7/GokuroSpawnTrigger.tooltips.chronosBarrier=The speed at which Gokuro will start affecting the time rate.
+placements.triggers.Sardine7/GokuroSpawnTrigger.tooltips.luigi=Whether to use the Gokuro sprite instead of the vanilla Oshiro sprite.
+placements.triggers.Sardine7/GokuroSpawnTrigger.tooltips.extraApproach=Whether Gokuro approaches you when charging up.
+placements.triggers.Sardine7/GokuroSpawnTrigger.tooltips.yPosition=Where Gokuro spawns on the y-axis. Set to -1 for default behaviour.
+placements.triggers.Sardine7/GokuroSpawnTrigger.tooltips.volume=The volume of all Gokuro sounds (except the bopping sound). Value should be between 0 and 1.
+placements.triggers.Sardine7/GokuroSpawnTrigger.tooltips.attackCount=The number of times Gokuro can attack before leaving. Set to -1 for infinite attacks.
+
 # SecondTextboxTrigger
 placements.triggers.Sardine7/SecondTextboxTrigger.tooltips.only_once=Triggers the dialogue the dialogue ID references only once.
 placements.triggers.Sardine7/SecondTextboxTrigger.mode=Determines how the second text box will trigger.
@@ -73,5 +64,10 @@ placements.triggers.Sardine7/SecondTextboxTrigger.dialog_id=References from Engl
 placements.triggers.Sardine7/SecondTextboxTrigger.death_count=Determines the exact amount of deaths required to activate the second text box trigger. Will always trigger if set to -1.
 placements.triggers.Sardine7/SecondTextboxTrigger.lifespan=How long the second text box will stay on screen after activation. Use commas to split multiple dialogue lifespans.
 
-# GokuroNormalizeTrigger
-placements.triggers.Sardine7/GokuroNormalizeTrigger.tooltips.count=The number of Gokuros that are made unable to control time rate.
+# SmoothieCameraTargetTrigger
+placements.triggers.Sardine7/SmoothieCameraTargetTrigger.tooltips.positionMode=Determines which direction the camera position moves in.
+placements.triggers.Sardine7/SmoothieCameraTargetTrigger.tooltips.yOnly=The camera will only lock on the Y axis.
+placements.triggers.Sardine7/SmoothieCameraTargetTrigger.tooltips.xOnly=The camera will only lock on the X axis.
+placements.triggers.Sardine7/SmoothieCameraTargetTrigger.tooltips.yLerpStrength=Determines how fast the camera moves to lock into place upon activation on the Y axis.
+placements.triggers.Sardine7/SmoothieCameraTargetTrigger.tooltips.xLerpStrength=Determines how fast the camera moves to lock into place upon activation on the X axis.
+placements.triggers.Sardine7/SmoothieCameraTargetTrigger.tooltips.deleteFlag=Session flag to deactivate the trigger, ignored if left empty. Camera will not reset if player is inside the trigger as it deactivates.\nIf the player transitions into the room with the flag set, the trigger can not be reactivated. However, if it was enabled and then disabled in the room, the player can reactivate it.
