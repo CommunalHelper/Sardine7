@@ -1,5 +1,5 @@
 - Name: Sardine7
-  Version: 1.1.4
+  Version: 1.2.0
   DLL: Code/bin/Sardine7.dll
   Dependencies:
     - Name: EverestCore
