@@ -2,7 +2,7 @@ module Sardine7LightSource
 
 using ..Ahorn, Maple
 
-@mapdef Entity "Sardine7/LightSource" LightSource(x::Integer, y::Integer, alpha::Number=1.0, radius::Number=48.0, startFade::Number=24.0, endFade::Number=48.0, color::String="White")
+@mapdef Entity "Sardine7/LightSource" LightSource(x::Integer, y::Integer, alpha::Number=1.0, startFade::Number=24.0, endFade::Number=48.0, color::String="White")
 
 const colors = sort(collect(keys(Ahorn.XNAColors.colors)))
 

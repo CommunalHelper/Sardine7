@@ -19,7 +19,6 @@ namespace Celeste.Mod.Sardine7.Entities
         public LightSource(EntityData data, Vector2 offset) : base(data.Position + offset + new Vector2(4, 4))
         {
             alpha = data.Float("alpha", 1f);
-            radius = data.Float("radius", 48f);
             color = ColorHelper.GetColor(data.Attr("color", "White"));
             
             Add(light = new VertexLight(color, alpha, data.Int("startFade", 24), data.Int("endFade", 48)));
@@ -28,8 +27,6 @@ namespace Celeste.Mod.Sardine7.Entities
         private VertexLight light;
 
         private float alpha;
-
-        private float radius;
 
         private Color color;
     }

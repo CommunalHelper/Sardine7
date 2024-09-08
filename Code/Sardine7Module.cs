@@ -1,11 +1,8 @@
 ﻿using Monocle;
 using System;
 using System.Xml;
-using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
-using Celeste.Mod.Sardine7.Entities;
-using Celeste.Mod.Sardine7.Triggers;
 
 namespace Celeste.Mod.Sardine7
 {
@@ -24,13 +21,11 @@ namespace Celeste.Mod.Sardine7
 
         public override void Load()
         {
-            Everest.Events.Level.OnLoadEntity += OnLoadEntity;
             // On.Celeste.Level.GetFullCameraTargetAt += Sardine7GetFullCameraTargetAt;
         }
 
         public override void Unload()
         {
-            Everest.Events.Level.OnLoadEntity -= OnLoadEntity;
             // On.Celeste.Level.GetFullCameraTargetAt -= Sardine7GetFullCameraTargetAt;
         }
 
@@ -127,64 +122,5 @@ namespace Celeste.Mod.Sardine7
             return orig(self, player, at);
         }
         */
-
-        private bool OnLoadEntity(Level level, LevelData levelData, Vector2 offset, EntityData entityData)
-        {
-            if (!entityData.Name.StartsWith("Sardine7"))
-                return false;
-            switch (entityData.Name.Remove(0, 8))
-            {
-                case "HumbleLookout":
-                    level.Add(new HumbleLookout(entityData, offset));
-                    return true;
-                case "SokobanBlock":
-                    level.Add(new SokobanBlock(entityData, offset));
-                    return true;
-                case "Beeker":
-                    level.Add(new Beeker(entityData, offset));
-                    return true;
-                case "Bunny":
-                    level.Add(new Bunny(entityData, offset));
-                    return true;
-                case "BunnyBlockField":
-                    level.Add(new BunnyBlockField(entityData, offset));
-                    return true;
-                case "LightSource":
-                    level.Add(new LightSource(entityData, offset));
-                    return true;
-                case "ChainMover":
-                    level.Add(new ChainMover(entityData, offset));
-                    return true;
-                case "GokuroSpawnTrigger":
-                    level.Add(new GokuroSpawnTrigger(entityData, offset));
-                    return true;
-                case "GokuroLeaveTrigger":
-                    level.Add(new GokuroLeaveTrigger(entityData, offset));
-                    return true;
-                case "DashCodeTrigger":
-                    level.Add(new DashCodeTrigger(entityData, offset));
-                    return true;
-                case "AmbienceTrigger":
-                    level.Add(new AmbienceTrigger(entityData, offset));
-                    return true;
-                case "SwitchMover":
-                    level.Add(new SwitchMover(entityData, offset));
-                    return true;
-                case "SmoothieCameraTargetTrigger":
-                    level.Add(new SmoothieCameraTargetTrigger(entityData, offset));
-                    return true;
-                case "SturdyFakeWall":
-                    level.Add(new SturdyFakeWall(entityData, offset, new EntityID(levelData.Name, entityData.ID)));
-                    return true;
-                case "SecondTextboxTrigger":
-                    level.Add(new SturdyFakeWall(entityData, offset, new EntityID(levelData.Name, entityData.ID)));
-                    return true;
-                case "GokuroNormalizeTrigger":
-                    level.Add(new GokuroNormalizeTrigger(entityData, offset));
-                    return true;
-                default:
-                    return false;
-            }
-        }
     }
 }
